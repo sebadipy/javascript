@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Entrega Nro.4 - Entrega Final - Di Pierro Sebastián</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+</head>
+<script src="entrega_final.js" defer ></script>
+<body>
+    <div class="alert alert-primary" role="alert">
+        <h2 id="titulo"> Entrega 4 - Final</h2>
+    </div>
+    
+    <div class="container-md"> Registro en SesionStorage 
+
+
+        <select id ="estado_curso" placeholder="DESACTIVADO" required class="form-select" size="3" aria-label="size 3 select example">
+        
+            <option selected>Selecciones estado de la carga</option>
+            <option value="ACTIVADO">ACTIVADO</option>
+            <option value="DESACTIVADO">DESACTIVADO</option>
+        </select>
+    
+        <button class="btn btn-primary" id="btnsession" >ACTIVAR/DESACTIVAR</button>
+        <button id="btnlimpiar" class="btn btn-danger">LIMPIAR DATOS REGISTRO</button>
+
+    
+    </div>
+    <h2> </h2>
+    <h4>** REGISTRO DE DATOS **</h4>   
+    <div id="formulario">
+
+     <h5>Legajo:</h5>
+     <input type="text" name="legajo" id="legajo" placeholder="S/D" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> 
+     <h5>Apellido y nombre:</h5>
+     <input type="text" name="nombres y apellido" id="nom_y_ap" placeholder="S/D" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+     <h5>Materia:</h5>
+     <input type="text" name="materia" id="materia" placeholder="S/D" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+     <h5>Profesor:</h5>
+     <input type="text" name="profesor" id="profesor" placeholder="S/D" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+     <h5>Comision:</h5>
+     <input type="text" name="comision" id="comision" placeholder="S/D" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+       
+    <h4>Nota primer parcial:</h4>
+
+    <select id ="nota1" class="form-select" aria-label="Nota Parcial 1">
+        <option selected>Nota</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+
+    </select>
+    <h4>Nota segundo parcial:</h4>
+
+    <select id ="nota2" class="form-select" aria-label="Nota Parcial 1">
+        <option selected>Nota</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+
+    </select>
+
+
+    
+    
+    
+    <button id="btncalcular" type="button" class="btn btn-success">CALCULAR</button>
+    
+    <h5>** Resultado **</h5>
+    <input type="readonly" id="nota_final" placeholder="Nota final" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> 
+
+   
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
